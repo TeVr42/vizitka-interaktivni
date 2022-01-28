@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+
+html {
+  scroll-behavior: smooth !important;
+}
+
+body {
+  font-family: 'Amatic SC', cursive;
+  background-color: #ffa500ff;
+  font-size: 4rem;
+  color: white;
+  text-align: center;
+}
+
+.main {
+  margin: 30% auto;
+  width: 85%;
+}
+
+.napis {
+  margin-bottom: 0;
+}
+
+.sipka {
+  width: 15%;
+}
+
+.napis, .sipka {
+  transition: transform 2s, color 2s;
+}
+
+.sipka:hover {
+  animation-name: malaSipka;
+  animation-duration: 0.3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.skryty {
+  display: none;
+}
+
+@media (min-width: 500px) {
+.main {
+  margin: 10% auto;
+  width: 80%;
+  font-size: 6rem;
+  text-align: left;
+}
+
+.sipka {
+  width: 10%;
+}
+
+.sipka:hover {
+  animation-name: stredniSipka;
+}
+}
+
+
+@media (min-width: 1000px) {
+.main {
+  font-size: 5rem;
+  margin: 10% auto;
+  width: 40%;
+}
+
+.sipka {
+  width: 7%;
+}
+.sipka:hover {
+  animation-name: velkaSipka;
+}
+.obalka {
+  margin-left: 35%;
+  margin-top: 5%;
+  width: 12%;
+}
+.obalka:hover {
+  animation-name: velkaObalka;
+  animation-duration: 0.3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+}
+
+@keyframes malaSipka {
+  from {width: 15%;}
+  to {width: 16%;}
+}
+@keyframes stredniSipka {
+  from {width: 10%;}
+  to {width: 11%;}
+}
+@keyframes velkaSipka {
+  from {width: 7%;}
+  to {width: 8%;}
+}
+
+@keyframes velkaObalka {
+  from {width: 12%;}
+  to {width: 13%;}
+}
