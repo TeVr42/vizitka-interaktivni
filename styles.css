@@ -61,8 +61,8 @@ body {
 @media (min-width: 1000px) {
 .main {
   font-size: 5rem;
-  margin: 10% auto;
-  width: 40%;
+  margin: 5% auto;
+  width: 60%;
 }
 
 .sipka {
@@ -83,6 +83,14 @@ body {
   animation-direction: alternate;
 }
 }
+@media (min-width: 1500px) {
+  .main {
+    font-size: 5rem;
+    margin: 10% auto;
+    width: 40%;
+  }
+  
+  }
 
 @keyframes malaSipka {
   from {width: 15%;}
