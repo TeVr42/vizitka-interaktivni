@@ -64,6 +64,10 @@ body {
   margin: 5% auto;
   width: 60%;
 }
+.specialni {
+  margin: auto;
+  text-align: center;
+}
 
 .sipka {
   width: 7%;
@@ -72,7 +76,6 @@ body {
   animation-name: velkaSipka;
 }
 .obalka {
-  margin-left: 35%;
   margin-top: 5%;
   width: 12%;
 }
